@@ -2,7 +2,7 @@ package selectionSort
 
 import u "algorithms/findSmalles"
 
-func selectionSort(arr []int)  []int {
+func SelectionSort(arr []int)  []int {
 	var newArr []int
 
 	for _ = range arr {

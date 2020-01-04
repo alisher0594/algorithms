@@ -1,6 +1,6 @@
 package binarySearch
 
-func binarySearch(list []int, item int) interface{} {
+func BinarySearch(list []int, item int) interface{} {
 	low := 0
 	high := len(list)-1
 

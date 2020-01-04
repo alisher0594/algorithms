@@ -1,9 +1,12 @@
 package main
 
 import (
-	//"fmt"
-	//qS "algorithms/quickSort"
+	"fmt"
+	selS "algorithms/selectionSort"
+	binS "algorithms/binarySearch"
+	qS "algorithms/quickSort"
 	bFs "algorithms/breadthFirstSearch"
+	rec "algorithms/recursion"
 )
 
 var people = map[string][]string{
@@ -26,12 +29,10 @@ var people = map[string][]string{
 
 
 func main() {
-	//sortedList := selectionSort([]int{5, 3, 6, 2, 10, 1, 9, 4, 8, 12})
-	//fmt.Println("guess: ", binarySearch(sortedList, 10))
-	//fmt.Println(factorial(50))
-	//fmt.Println(sum([]int{5, 3, 6, 2, 10, 1, 9, 4, 8, 12}))
-	//fmt.Println(selectionSort([]int{5, 3, 6, 2, 10, 1, 9, 4, 8, 12}))
-	//fmt.Println(qS.QuickSort([]int{5, 3, 6, 2, 10, 1, 9, 4, 8, 12}))
+	sortedList := selS.SelectionSort([]int{5, 3, 6, 2, 10, 1, 9, 4, 8, 12})
+	fmt.Println("guess: ", binS.BinarySearch(sortedList, 10))
+	fmt.Println(selS.SelectionSort([]int{5, 3, 6, 2, 10, 1, 9, 4, 8, 12}))
+	fmt.Println(qS.QuickSort([]int{5, 3, 6, 2, 10, 1, 9, 4, 8, 12}))
 
 	//electorate := []string{"Alice", "Bob", "Mike", "Alice", "Fed", "Jon"}
 	//for _, val := range electorate {
@@ -39,4 +40,7 @@ func main() {
 	//}
 
 	bFs.BreadthFirstSearch(people)
+
+	fmt.Println(rec.Factorial(50))
+	fmt.Println(rec.Sum([]int{5, 3, 6, 2, 10, 1, 9, 4, 8, 12}))
 }

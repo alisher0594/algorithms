@@ -1,7 +1,7 @@
 package recursion
 
 
-func factorial(x int) int {
+func Factorial(x int) int {
 	if x == 1 {
 		return 1
 	} else {
@@ -9,7 +9,7 @@ func factorial(x int) int {
 	}
 }
 
-func sum(arr []int) int {
+func Sum(arr []int) int {
 	if len(arr) == 1 {
 		return arr[0]
 	} else {
